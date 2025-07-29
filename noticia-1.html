@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Avance en el Cultivo de Café Sostenible - Cooperativa KAPÉ R.L.</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="kp.png" alt="Logo Cooperativa KAPÉ R.L.">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li> <li><a href="contact.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section blog-single-post">
+        <div class="container">
+            <img src="capa.jfif" alt="Imagen principal de la noticia" class="post-main-image">
+            
+            <h1>Gran Avance en el Cultivo de Café Sostenible</h1>
+            <p class="post-meta">Publicado el 24 de Julio, 2025 por Cooperativa KAPÉ R.L. | <a href="noticias.html">Volver a Noticias</a></p>
+            
+            <p>En un esfuerzo continuo por promover prácticas agrícolas responsables y eficientes, la Cooperativa KAPÉ R.L. se enorgullece de anunciar los resultados positivos de la implementación de nuevas técnicas de cultivo de café sostenible en la región de Tamahú. Este proyecto, que comenzó a principios de año, ha demostrado un aumento significativo en la calidad y cantidad de la producción, al mismo tiempo que minimiza el impacto ambiental.</p>
+            
+            <p>Las nuevas técnicas incluyen el uso optimizado de recursos hídricos, la aplicación de abonos orgánicos certificados y la promoción de la biodiversidad en las fincas cafetaleras. Nuestros agrónomos han trabajado de cerca con los socios, ofreciendo capacitaciones y seguimiento personalizado para asegurar la correcta adopción de estas metodologías.</p>
+            
+            <h3>Beneficios Clave:</h3>
+            <ul>
+                <li>**Mejora de la Calidad:** Los granos de café cosechados bajo estas prácticas presentan un perfil de sabor más complejo y una mayor uniformidad.</li>
+                <li>**Aumento de la Productividad:** A pesar de ser métodos sostenibles, se ha observado un incremento en el rendimiento por hectárea.</li>
+                <li>**Protección del Medio Ambiente:** Reducción del uso de químicos, conservación del suelo y del agua, y fomento de ecosistemas saludables.</li>
+                <li>**Impacto Social:** Empoderamiento de los agricultores a través del conocimiento y mejora de sus ingresos.</li>
+            </ul>
+
+            <p>El presidente de la cooperativa, [Nombre del Presidente], comentó: "Estamos muy orgullosos de ver cómo nuestros socios adoptan estas prácticas. No solo estamos produciendo un café de mayor calidad, sino que también estamos construyendo un futuro más verde y próspero para nuestras comunidades."</p>
+
+            <p>Invitamos a todos nuestros socios y a la comunidad en general a conocer más sobre este proyecto y a participar en futuras iniciativas. ¡Juntos, cultivamos un futuro mejor!</p>
+        </div> </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cooperativa KAPÉ R.L. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/cooperativakapedetamahu" target="_blank" aria-label="Facebook">
+                    <img src="iconfb.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/kape_tamahu/" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                    <img src="twitter.png" alt="X">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                <img src="tik-tok.png" alt="X">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                <img src="youtube.png" alt="X">
+                </a>
+
+                <!--aqui agregar mas redes sociales-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Opcional: Cerrar el menú al hacer clic en un enlace (para móviles)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

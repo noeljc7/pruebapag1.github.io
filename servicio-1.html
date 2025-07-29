@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credito Agricola - Cooperativa KAPÉ R.L.</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="kp.png" alt="Logo Cooperativa KAPÉ R.L.">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li> <li><a href="contact.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section blog-single-post">
+        <div class="container">
+            <img src="/collage/ca1.jpeg" alt="Imagen principal de la noticia" class="post-main-image">
+            
+            <h1>Más que un préstamo, somos tu aliado estratégico.</h1>
+            <p class="post-meta">Publicado el 24 de Julio, 2025 por Cooperativa KAPÉ R.L. | <a href="servicios.html">Volver a Servicios</a></p>
+            
+            <p>Imagina un futuro donde tus proyectos agrícolas florecen sin las limitaciones financieras. En Cooperativa Integral Agrícola KAPÉ R.L. de Tamahú, entendemos que cada ciclo de siembra es una inversión de esperanza y esfuerzo. Por eso, te ofrecemos Créditos Agrícolas diseñados a la medida de tus necesidades, para que la falta de capital nunca sea un obstáculo para alcanzar tu máximo potencial.</p>
+            
+            <p>Las nuevas técnicas incluyen el uso optimizado de recursos hídricos, la aplicación de abonos orgánicos certificados y la promoción de la biodiversidad en las fincas cafetaleras. Nuestros agrónomos han trabajado de cerca con los socios, ofreciendo capacitaciones y seguimiento personalizado para asegurar la correcta adopción de estas metodologías.</p>
+            
+            <h3>Beneficios Clave:</h3>
+            <ul>
+                <li><strong>Soluciones financieras flexibles:</strong> Adaptamos los plazos y las condiciones a los ritmos de tu producción y a las particularidades de tu cultivo.</li>
+
+                <li><strong>Tasas competitivas:</strong> Porque queremos que tu inversión crezca, no que se vea mermada por intereses excesivos.</li>
+
+                <li><strong>Impulsa tu crecimiento:</strong> Desde la adquisición de insumos hasta la expansión de tus tierras, te brindamos el capital necesario para llevar tu visión agrícola al siguiente nivel.</li>
+
+            </ul>
+
+            <p>El presidente de la cooperativa, <strong>Paulino Tipol</strong>, comentó: "Estamos muy orgullosos de ver cómo nuestros socios adoptan estas prácticas. No solo estamos produciendo un café de mayor calidad, sino que también estamos construyendo un futuro más verde y próspero para nuestras comunidades."</p>
+
+            <p>Invitamos a todos nuestros socios y a la comunidad en general a conocer más sobre este proyecto y a participar en futuras iniciativas. ¡Juntos, cultivamos un futuro mejor!</p>
+        </div> </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cooperativa KAPÉ R.L. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/cooperativakapedetamahu" target="_blank" aria-label="Facebook">
+                    <img src="iconfb.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/kape_tamahu/" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                    <img src="twitter.png" alt="X">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                <img src="tik-tok.png" alt="X">
+                </a>
+
+                <a href="#" target="_blank" aria-label="X">
+                <img src="youtube.png" alt="X">
+                </a>
+
+                <!--aqui agregar mas redes sociales-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Opcional: Cerrar el menú al hacer clic en un enlace (para móviles)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
