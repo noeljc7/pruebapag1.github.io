@@ -835,7 +835,7 @@ body {
     .navbar .nav-links {
         display: flex; /* Cambiado de 'none' para que el JS pueda controlarlo */
         flex-direction: column;
-        width: 420px; /* Ancho fijo para el menú desplegable */
+        width: 768px; /* Ancho fijo para el menú desplegable */
         background-color: var(--secondary-color);
         position: absolute; /* CLAVE: Posicionamiento absoluto respecto al .header */
         top: 100%; /* CLAVE: Justo debajo del header */
@@ -843,7 +843,7 @@ body {
         left: auto; /* Deshacer cualquier 'left' anterior */
         height: auto;
         padding: 20px 0;
-        transform: translateX(-100%); /* Oculto por defecto */
+        transform: translateX(-300%); /* Oculto por defecto */
         transition: transform 0.3s ease-in-out;
         z-index: 998; /* Un z-index menor que el hamburguesa pero mayor que el contenido */
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
