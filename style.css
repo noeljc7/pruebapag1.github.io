@@ -529,7 +529,7 @@ body {
     text-align: center; /* Centra la imagen si es más pequeña que el contenedor */
 }
 
-.imagen-acerca-de img {
+.imagen-acerca-de video {
     max-width: 100%; /* Asegura que la imagen no se desborde de su contenedor */
     height: auto;    /* Mantiene la proporción de la imagen al escalar */
     display: block;  /* Elimina espacio extra debajo de la imagen (si la pones sin texto debajo) */
