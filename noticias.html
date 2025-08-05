@@ -6,6 +6,7 @@
     <title>Noticias - Cooperativa KAPÉ R.L.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
 
     </head>
 <body>
@@ -35,6 +36,7 @@
         <div class="container">
             <h2>Últimas Noticias</h2>
             <div class="blog-posts-grid">
+                
                 <article class="blog-post-card">
                     <img src="n1capacitacion.jfif" alt="Imagen de la Noticia 1">
                     <div class="post-content">
@@ -45,7 +47,7 @@
                     </div>
                 </article>
 
-                <article class="blog-post-card">
+                <!--  <article class="blog-post-card">
                     <img src="img/noticia2.jpeg" alt="Imagen de la Noticia 2">
                     <div class="post-content">
                         <h3><a href="noticia-2.html">........</a></h3>
@@ -53,7 +55,7 @@
                         <p>........</p>
                         <a href="noticia-2.html" class="read-more-btn">Leer más</a>
                     </div>
-                </article>
+                </article>  !-->
 
                 </div>
         </div>
@@ -88,26 +90,5 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                hamburger.classList.toggle('active');
-            });
-
-            // Opcional: Cerrar el menú al hacer clic en un enlace (para móviles)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                        hamburger.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>

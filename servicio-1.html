@@ -6,6 +6,8 @@
     <title>Credito Agricola - Cooperativa KAPÉ R.L.</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -33,7 +35,7 @@
 
     <section class="content-section blog-single-post">
         <div class="container">
-            <img src="s1.1.jpeg" alt="Imagen principal de la noticia" class="post-main-image">
+            <img src="s1.1.jpeg" alt="Imagen principal del servicio de creditos" class="post-main-image">
             
             <h1>Más que un préstamo, somos tu aliado estratégico.</h1>
             <p class="post-meta">Publicado el 24 de Julio, 2025 por Cooperativa KAPÉ R.L. | <a href="servicios.html">Volver a Servicios</a></p>
@@ -82,26 +84,5 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                hamburger.classList.toggle('active');
-            });
-
-            // Opcional: Cerrar el menú al hacer clic en un enlace (para móviles)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                        hamburger.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>

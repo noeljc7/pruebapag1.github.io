@@ -9,6 +9,7 @@
 
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -39,7 +40,7 @@
     <section class="content-section blog-single-post">
         <div class="container">
     <!--Aqui se debe de reemplazar la imagen jpg con una nueva para este servicio no tocar (img src) solo cambiar lo que esta entre comillas (" ") -->
-            <img src="s4capacitacion.jpg" alt="Imagen principal de la noticia" class="post-main-image">
+            <img src="s4capacitacion.jpg" alt="Imagen principal del servicio de capacitaciones" class="post-main-image">
             
     <!--aqui se cambia el titulo del servicio (solo cambiar lo que esta entre (<h1> </h1>)-->
             <h1>Invierte en el activo más valioso: Tu Gente</h1>
@@ -93,26 +94,5 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                hamburger.classList.toggle('active');
-            });
-
-            // Opcional: Cerrar el menú al hacer clic en un enlace (para móviles)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                        hamburger.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
